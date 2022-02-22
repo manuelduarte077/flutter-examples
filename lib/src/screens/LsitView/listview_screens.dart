@@ -5,7 +5,7 @@ class ListViewScreen extends StatelessWidget {
     'Batman',
     'SuperMan',
     'Capitan America',
-    'Iron Man ',
+    'Iron Man',
     'Thor',
     'Hulk',
     'Start Lord',
@@ -40,32 +40,7 @@ class ListViewScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('ListView'),
       ),
-      body:
-          // ListView.separated(
-          //   itemCount: hero.length,
-          //   itemBuilder: (context, index) {
-          //     return Card(
-          //       child: Padding(
-          //         padding: const EdgeInsets.all(15.0),
-          //         child: Text(hero[index]),
-          //       ),
-          //     );
-          //   },
-          //   separatorBuilder: (context, index) {
-          //     return Card(
-          //       color: Colors.grey,
-          //       child: Padding(
-          //         padding: const EdgeInsets.all(5.0),
-          //         child: Text(
-          //           heroDetail[index],
-          //           style: const TextStyle(color: Colors.white),
-          //         ),
-          //       ),
-          //     );
-          //   },
-          // ),
-
-          ListView(
+      body: ListView(
         padding: const EdgeInsets.all(20),
         children: <Widget>[
           const CircleAvatar(

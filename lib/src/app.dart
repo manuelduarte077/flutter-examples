@@ -12,7 +12,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: ListViewScreen(),
+      home: const ListViewScreen1(),
     );
   }
 }
