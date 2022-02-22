@@ -12,7 +12,21 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const ListViewScreen1(),
+      // home: const ListViewScreen1(),
+      initialRoute: 'home',
+      routes: {
+        'home': (context) => const HomeScreen(),
+        'listview1': (context) => const ListViewScreen(name: "List View"),
+        'listview2': (context) => const ListViewScreen1(),
+        'alert': (context) => const AlertScreen(name: "Alert Widget"),
+        'card': (context) => const CardScreen(),
+      },
+      onGenerateRoute: (RouteSettings settings) {
+        print(settings.name);
+        return MaterialPageRoute(
+          builder: (context) => const HomeScreen(),
+        );
+      },
     );
   }
 }
