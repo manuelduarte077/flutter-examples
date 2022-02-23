@@ -12,7 +12,7 @@ class App extends StatelessWidget {
         primarySwatch: Colors.indigo,
       ),
       initialRoute: AppRoutes.initialRoute,
-      routes: AppRoutes.routes,
+      routes: AppRoutes.getAppRoutes(),
 
       onGenerateRoute: AppRoutes.onGenerateRoute,
       // Para que no se muestre un error cuando no existe la ruta que se esta
