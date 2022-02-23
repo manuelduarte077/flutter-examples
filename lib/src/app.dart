@@ -1,6 +1,5 @@
+import 'package:fl_components/src/routes/app_routes.dart';
 import 'package:flutter/material.dart';
-
-import 'screens/screens.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -12,21 +11,12 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      // home: const ListViewScreen1(),
-      initialRoute: 'home',
-      routes: {
-        'home': (context) => const HomeScreen(),
-        'listview1': (context) => const ListViewScreen(name: "List View"),
-        'listview2': (context) => const ListViewScreen1(),
-        'alert': (context) => const AlertScreen(name: "Alert Widget"),
-        'card': (context) => const CardScreen(),
-      },
-      onGenerateRoute: (RouteSettings settings) {
-        print(settings.name);
-        return MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
-        );
-      },
+      initialRoute: AppRoutes.initialRoute,
+      routes: AppRoutes.routes,
+
+      onGenerateRoute: AppRoutes.onGenerateRoute,
+      // Para que no se muestre un error cuando no existe la ruta que se esta
+      // solicitando en la aplicacion
     );
   }
 }

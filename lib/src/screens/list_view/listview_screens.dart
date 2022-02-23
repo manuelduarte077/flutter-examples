@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class ListViewScreen extends StatelessWidget {
-  final name;
   final hero = const [
     'Batman',
     'SuperMan',
@@ -33,7 +32,9 @@ class ListViewScreen extends StatelessWidget {
     'San Andreas',
     'Delta Force 4'
   ];
-  const ListViewScreen({Key? key, required this.name}) : super(key: key);
+  const ListViewScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

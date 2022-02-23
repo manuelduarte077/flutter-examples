@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AlertScreen extends StatelessWidget {
-  const AlertScreen({Key? key, required this.name}) : super(key: key);
-
-  final name;
+  const AlertScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
