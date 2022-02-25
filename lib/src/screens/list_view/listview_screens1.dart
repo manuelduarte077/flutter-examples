@@ -34,7 +34,6 @@ class ListViewScreen1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('ListView.separated'),
-        elevation: 0,
       ),
       body: ListView.separated(
         itemCount: hero.length,

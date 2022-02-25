@@ -47,7 +47,6 @@ class AppRoutes {
         option.route: (context) => option.screen,
       });
     }
-
     return appRoutes;
   }
 
