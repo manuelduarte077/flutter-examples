@@ -17,7 +17,7 @@ class CardScreen extends StatelessWidget {
             .cardOptionsImage.length, // Para las card con imagenes
         itemBuilder: (context, index) {
           final cardImage = CardContentImage.cardOptionsImage[index];
-          return CustonCardType2(cardImage: cardImage);
+          return CustonCardType2(image: cardImage);
         },
       ),
     );
