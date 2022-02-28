@@ -49,5 +49,6 @@
     ],
     "psi-header.changes-tracking": {
       "autoHeader": "autoSave"
-    }
+    },
+    "editor.fontSize": 16
   }

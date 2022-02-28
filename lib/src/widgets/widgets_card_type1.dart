@@ -1,5 +1,7 @@
-import 'package:fl_components/src/models/card_content.dart';
 import 'package:flutter/material.dart';
+import 'package:fl_components/src/models/card_content.dart';
+
+import 'button_options.dart';
 
 class CustonCardType1 extends StatelessWidget {
   const CustonCardType1({
@@ -25,29 +27,6 @@ class CustonCardType1 extends StatelessWidget {
           ),
         );
       },
-    );
-  }
-}
-
-class OptionsButton extends StatelessWidget {
-  const OptionsButton({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        TextButton(
-          child: const Text('Cancel'),
-          onPressed: () {},
-        ),
-        TextButton(
-          child: const Text('Learn More'),
-          onPressed: () {},
-        ),
-      ],
     );
   }
 }
