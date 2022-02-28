@@ -19,7 +19,7 @@ class CustonCardType1 extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.account_box),
             title: Text(card.title),
-            subtitle: Text(card.description),
+            subtitle: Text(card.description ?? 'No title'),
           ),
           const OptionsButton()
         ],

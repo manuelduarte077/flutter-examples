@@ -7,10 +7,10 @@ import 'button_options.dart';
 class CustonCardType2 extends StatelessWidget {
   const CustonCardType2({
     Key? key,
-    required this.cardImage,
+    required this.image,
   }) : super(key: key);
 
-  final CardContentImage cardImage;
+  final CardContentImage image;
 
   @override
   Widget build(BuildContext context) {
@@ -22,21 +22,30 @@ class CustonCardType2 extends StatelessWidget {
         children: <Widget>[
           Container(
             alignment: AlignmentDirectional.topStart,
-            padding: const EdgeInsets.only(top: 25, left: 25),
+            padding: const EdgeInsets.only(top: 25, left: 25, bottom: 10),
             child: Text(
-              cardImage.title,
+              image.title,
               style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
           ),
           FadeInImage(
-            image: NetworkImage(cardImage.cardImage),
+            image: NetworkImage(
+              image.cardImage,
+            ),
             placeholder: const AssetImage('assets/jar-loading.gif'),
             width: double.infinity,
             height: 230,
             fit: BoxFit.cover,
             fadeInDuration: const Duration(milliseconds: 300),
           ),
-          Text(cardImage.description, style: const TextStyle(fontSize: 16)),
+          Container(
+            padding: const EdgeInsets.only(right: 25, left: 25, top: 10),
+            alignment: AlignmentDirectional.center,
+            child: Text(
+              image.description,
+              style: const TextStyle(fontSize: 16),
+            ),
+          ),
           const SizedBox(height: 10),
           const OptionsButton(),
         ],
