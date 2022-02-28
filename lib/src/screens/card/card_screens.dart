@@ -1,3 +1,4 @@
+import 'package:fl_components/src/models/card_content.dart';
 import 'package:flutter/material.dart';
 
 import 'package:fl_components/src/widgets/widgets.dart';
@@ -11,7 +12,14 @@ class CardScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Card'),
       ),
-      body: const CustonCardType1(),
+      body: ListView.builder(
+        itemCount: CardContentImage
+            .cardOptionsImage.length, // Para las card con imagenes
+        itemBuilder: (context, index) {
+          final cardImage = CardContentImage.cardOptionsImage[index];
+          return CustonCardType2(cardImage: cardImage);
+        },
+      ),
     );
   }
 }
