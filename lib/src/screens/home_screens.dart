@@ -1,3 +1,4 @@
+import 'package:fl_components/src/models/card_content.dart';
 import 'package:fl_components/src/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,15 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: title,
+        actions: [
+          Container(
+            margin: const EdgeInsets.only(right: 10),
+            child: CircleAvatar(
+              backgroundImage: NetworkImage(AvatarCirlce.nameHS.toString()),
+              radius: 20,
+            ),
+          ),
+        ],
       ),
       body: menuList(),
     );

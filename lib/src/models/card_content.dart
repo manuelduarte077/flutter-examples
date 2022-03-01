@@ -80,3 +80,17 @@ class CardContentImage extends CardContent {
     ),
   ];
 }
+
+class AvatarCirlce {
+  static String? name =
+      'https://upload.wikimedia.org/wikipedia/commons/8/87/Avatar_poe84it.png';
+  static String? nameHS =
+      'https://cdn.dribbble.com/users/1622791/screenshots/11174104/flutter_intro.png';
+  AvatarCirlce({
+    name,
+    nameHS,
+  }) {
+    name = name ?? 'SL';
+    nameHS = nameHS ?? 'HS';
+  }
+}
