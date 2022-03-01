@@ -49,6 +49,12 @@ class AppRoutes {
       icon: Icons.animation,
       screen: const AnimatedScreen(),
     ),
+    MenuOption(
+      route: 'Inputs',
+      name: 'Inputs - TextField',
+      icon: Icons.input,
+      screen: const InputScreen(),
+    ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
