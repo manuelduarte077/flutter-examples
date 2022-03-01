@@ -50,10 +50,16 @@ class AppRoutes {
       screen: const AnimatedScreen(),
     ),
     MenuOption(
-      route: 'Inputs',
+      route: 'inputs',
       name: 'Inputs - TextField',
       icon: Icons.input,
       screen: const InputScreen(),
+    ),
+    MenuOption(
+      route: 'slider',
+      name: 'Slider ',
+      icon: Icons.slideshow_rounded,
+      screen: const SliderScreen(),
     ),
   ];
 
