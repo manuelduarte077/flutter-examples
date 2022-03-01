@@ -8,3 +8,5 @@ export 'package:fl_components/src/screens/animated/animated_screens.dart';
 export 'package:fl_components/src/screens/forms/input_screen.dart';
 
 export 'package:fl_components/src/screens/slider/slider_screen.dart';
+
+export 'package:fl_components/src/screens/list_view/list_view_builder.dart';
