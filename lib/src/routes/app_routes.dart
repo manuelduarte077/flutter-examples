@@ -7,12 +7,12 @@ class AppRoutes {
   static const initialRoute = 'home';
 
   static final menuOptions = <MenuOption>[
-    MenuOption(
-      route: 'home',
-      name: 'Home Screen',
-      icon: Icons.home,
-      screen: const HomeScreen(),
-    ),
+    // MenuOption(
+    //   route: 'home',
+    //   name: 'Home Screen',
+    //   icon: Icons.home,
+    //   screen: const HomeScreen(),
+    // ),
     MenuOption(
       route: 'listview1',
       name: 'ListView Tipo 1',
@@ -66,6 +66,12 @@ class AppRoutes {
       name: 'ListView Builder',
       icon: Icons.view_list,
       screen: const ListViewBuilderScreen(),
+    ),
+    MenuOption(
+      route: 'top_widgets',
+      name: 'Top Widgets',
+      icon: Icons.topic,
+      screen: const TopWidgetsScreen(),
     ),
   ];
 
