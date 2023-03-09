@@ -1,5 +1,5 @@
-import 'package:fl_components/src/models/card_content.dart';
-import 'package:fl_components/src/routes/app_routes.dart';
+import 'package:fl_components/components/models/card_content.dart';
+import 'package:fl_components/components/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';

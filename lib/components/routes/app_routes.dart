@@ -1,4 +1,4 @@
-import 'package:fl_components/src/models/models.dart';
+import 'package:fl_components/components/models/models.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/screens.dart';

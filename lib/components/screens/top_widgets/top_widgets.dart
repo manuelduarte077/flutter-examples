@@ -1,8 +1,8 @@
-import 'package:fl_components/src/screens/top_widgets/widgets/widgets_1.dart';
-import 'package:fl_components/src/screens/top_widgets/widgets/widgets_2.dart';
-import 'package:fl_components/src/screens/top_widgets/widgets/widgets_3.dart';
-import 'package:fl_components/src/screens/top_widgets/widgets/widgets_4.dart';
-import 'package:fl_components/src/screens/top_widgets/widgets/widgets_5.dart';
+import 'package:fl_components/components/screens/top_widgets/widgets/widgets_1.dart';
+import 'package:fl_components/components/screens/top_widgets/widgets/widgets_2.dart';
+import 'package:fl_components/components/screens/top_widgets/widgets/widgets_3.dart';
+import 'package:fl_components/components/screens/top_widgets/widgets/widgets_4.dart';
+import 'package:fl_components/components/screens/top_widgets/widgets/widgets_5.dart';
 import 'package:flutter/material.dart';
 
 class TopWidgetsScreen extends StatefulWidget {
