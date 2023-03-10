@@ -1,5 +1,4 @@
-import 'package:fl_components/components/routes/app_routes.dart';
-import 'package:fl_components/components/theme/app_theme.dart';
+import 'package:fl_components/designs/custom_painters/headers_page.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -7,12 +6,15 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
-      initialRoute: AppRoutes.initialRoute,
-      routes: AppRoutes.getAppRoutes(),
-      onGenerateRoute: AppRoutes.onGenerateRoute,
+    return  MaterialApp(
+      home: const HeadersPage(),
+      theme: ThemeData.dark(
+        useMaterial3: true,
+      ),
+      // theme: AppTheme.lightTheme,
+      // initialRoute: AppRoutes.initialRoute,
+      // routes: AppRoutes.getAppRoutes(),
+      // onGenerateRoute: AppRoutes.onGenerateRoute,
       // Para que no se muestre un error cuando no existe la ruta que se esta
       // solicitando en la aplicacion
     );

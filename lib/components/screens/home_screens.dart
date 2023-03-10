@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const title = Text('Flutter Componets');
+    const title = Text('Flutter Components');
 
     return Scaffold(
       appBar: AppBar(
