@@ -1,6 +1,6 @@
 import 'package:fl_components/components/theme/app_theme.dart';
+import 'package:fl_components/models/card_content.dart';
 import 'package:flutter/material.dart';
-import 'package:fl_components/components/models/card_content.dart';
 
 import 'button_options.dart';
 

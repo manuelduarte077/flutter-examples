@@ -1,5 +1,5 @@
-import 'package:fl_components/components/models/card_content.dart';
 import 'package:fl_components/components/widgets/widgets.dart';
+import 'package:fl_components/models/card_content.dart';
 import 'package:flutter/material.dart';
 
 class CircleAvatarScreen extends StatelessWidget {
