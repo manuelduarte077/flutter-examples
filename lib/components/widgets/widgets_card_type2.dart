@@ -1,11 +1,11 @@
-import 'package:fl_components/src/theme/app_theme.dart';
+import 'package:fl_components/components/theme/app_theme.dart';
+import 'package:fl_components/models/card_content.dart';
 import 'package:flutter/material.dart';
-import 'package:fl_components/src/models/card_content.dart';
 
 import 'button_options.dart';
 
-class CustonCardType2 extends StatelessWidget {
-  const CustonCardType2({
+class CustomCardType2 extends StatelessWidget {
+  const CustomCardType2({
     Key? key,
     required this.image,
   }) : super(key: key);
@@ -18,6 +18,8 @@ class CustonCardType2 extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
       clipBehavior: Clip.antiAlias,
       elevation: 15,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      shadowColor: AppTheme.primary.withOpacity(0.5),
       child: Column(
         children: <Widget>[
           Container(
@@ -50,8 +52,6 @@ class CustonCardType2 extends StatelessWidget {
           const OptionsButton(),
         ],
       ),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      shadowColor: AppTheme.primary.withOpacity(0.5),
     );
   }
 }

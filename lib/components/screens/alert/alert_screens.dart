@@ -1,4 +1,3 @@
-import 'package:fl_components/src/theme/app_theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -8,9 +7,7 @@ class AlertScreen extends StatelessWidget {
 
   static const textButton = ['OK', 'Cancel'];
 
-  const AlertScreen({
-    Key? key,
-  }) : super(key: key);
+  const AlertScreen({Key? key}) : super(key: key);
 
   void displayDialogIOS(BuildContext context) {
     showCupertinoDialog(

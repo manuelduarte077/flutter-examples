@@ -1,10 +1,10 @@
+import 'package:fl_components/models/card_content.dart';
 import 'package:flutter/material.dart';
-import 'package:fl_components/src/models/card_content.dart';
 
 import 'button_options.dart';
 
-class CustonCardType1 extends StatelessWidget {
-  const CustonCardType1({
+class CustomCardType1 extends StatelessWidget {
+  const CustomCardType1({
     Key? key,
     required this.card,
   }) : super(key: key);

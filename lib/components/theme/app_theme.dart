@@ -15,7 +15,7 @@ class AppTheme {
 
     // cambiamos el color de los botones de manera global
     textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(primary: primary),
+      style: TextButton.styleFrom(backgroundColor: primary),
     ),
 
     // Cambiar el color de floatingActionButton
@@ -26,7 +26,7 @@ class AppTheme {
     // Cambiar el color de elevatedButton
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        primary: primary,
+        backgroundColor: primary,
         shape: const StadiumBorder(),
         elevation: 0,
       ),

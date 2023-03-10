@@ -1,5 +1,5 @@
-import 'package:fl_components/src/models/card_content.dart';
-import 'package:fl_components/src/routes/app_routes.dart';
+import 'package:fl_components/components/routes/app_routes.dart';
+import 'package:fl_components/models/card_content.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
@@ -9,10 +9,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const title = Text('Flutter Componets');
+    const title = Text('Flutter Components');
 
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: title,
         actions: [
           Container(

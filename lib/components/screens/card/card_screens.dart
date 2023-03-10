@@ -1,7 +1,7 @@
-import 'package:fl_components/src/models/card_content.dart';
+import 'package:fl_components/models/card_content.dart';
 import 'package:flutter/material.dart';
 
-import 'package:fl_components/src/widgets/widgets.dart';
+import 'package:fl_components/components/widgets/widgets.dart';
 
 class CardScreen extends StatelessWidget {
   const CardScreen({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class CardScreen extends StatelessWidget {
             .cardOptionsImage.length, // Para las card con imagenes
         itemBuilder: (context, index) {
           final cardImage = CardContentImage.cardOptionsImage[index];
-          return CustonCardType2(image: cardImage);
+          return CustomCardType2(image: cardImage);
         },
       ),
     );

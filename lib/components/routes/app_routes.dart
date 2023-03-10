@@ -1,4 +1,5 @@
-import 'package:fl_components/src/models/models.dart';
+import 'package:fl_components/models/menu_options.dart';
+import 'package:fl_components/navigation/navigation.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/screens.dart';
@@ -88,7 +89,7 @@ class AppRoutes {
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     return MaterialPageRoute(
-      builder: (context) => const HomeScreen(),
+      builder: (context) =>  NavigationScreen(tab: 'home',),
     );
   }
 }
