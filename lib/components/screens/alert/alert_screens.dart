@@ -7,9 +7,7 @@ class AlertScreen extends StatelessWidget {
 
   static const textButton = ['OK', 'Cancel'];
 
-  const AlertScreen({
-    Key? key,
-  }) : super(key: key);
+  const AlertScreen({Key? key}) : super(key: key);
 
   void displayDialogIOS(BuildContext context) {
     showCupertinoDialog(

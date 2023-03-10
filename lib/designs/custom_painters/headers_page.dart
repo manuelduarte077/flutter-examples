@@ -222,7 +222,7 @@ class _HeaderPicoPainter extends CustomPainter {
 
     // Propiedades
     lapiz.color = const Color(0xff615AAB);
-    lapiz.style = PaintingStyle.stroke; // .fill .stroke
+    lapiz.style = PaintingStyle.fill; // .fill .stroke
     lapiz.strokeWidth = 20;
 
     final path = Path();
