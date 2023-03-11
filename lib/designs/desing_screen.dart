@@ -1,5 +1,6 @@
 import 'package:fl_components/components/theme/app_theme.dart';
 import 'package:fl_components/designs/custom_painters/headers_page.dart';
+import 'package:fl_components/designs/emergency/emergency_screen.dart';
 import 'package:flutter/material.dart';
 
 class DesignScreen extends StatelessWidget {
@@ -30,7 +31,18 @@ Column menuDesignList(BuildContext context) {
             MaterialPageRoute(builder: (context) => const HeadersPage()),
           );
         },
-      )
+      ),
+      ListTile(
+        title: const Text('Emergency'),
+        trailing: const Icon(Icons.arrow_forward_ios),
+        leading: const Icon(Icons.design_services, color: AppTheme.primary),
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const EmergencyScreen()),
+          );
+        },
+      ),
     ],
   );
 }
