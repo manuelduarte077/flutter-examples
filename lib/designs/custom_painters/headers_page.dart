@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class HeadersPage extends StatefulWidget {
@@ -15,7 +16,7 @@ class _HeadersPageState extends State<HeadersPage>
   void initState() {
     super.initState();
     _tabController = TabController(length: 8, vsync: this);
-    _tabController.animateTo(2);
+    _tabController.animateTo(0);
   }
 
   @override
@@ -55,7 +56,9 @@ class _HeadersPageState extends State<HeadersPage>
           isScrollable: true,
           physics: const BouncingScrollPhysics(),
           onTap: (int index) {
-            print('Tab $index is tapped');
+            if (kDebugMode) {
+              print('Tab $index is tapped');
+            }
           },
           enableFeedback: true,
           tabs: const [

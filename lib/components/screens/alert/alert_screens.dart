@@ -129,8 +129,8 @@ class TextButtonAlert extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      child: Text(text, style: TextStyle(color: textColor)),
       onPressed: pressed,
+      child: Text(text, style: TextStyle(color: textColor)),
     );
   }
 }
