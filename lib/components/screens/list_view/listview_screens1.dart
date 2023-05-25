@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class ListViewScreen1 extends StatelessWidget {
@@ -50,7 +51,9 @@ class ListViewScreen1 extends StatelessWidget {
             ),
             onTap: () {
               final comic = hero[index];
-              print(comic);
+              if (kDebugMode) {
+                print(comic);
+              }
             },
           );
         },

@@ -1,4 +1,5 @@
 import 'package:fl_components/components/widgets/widgets.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class InputScreen extends StatelessWidget {
@@ -6,7 +7,7 @@ class InputScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
     final Map<String, String> formValues = {
       'name': 'Manuel',
@@ -25,7 +26,7 @@ class InputScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
           child: Form(
-            key: _formKey,
+            key: formKey,
             child: Column(
               children: [
                 CustomInputField(
@@ -114,10 +115,14 @@ class InputScreen extends StatelessWidget {
                   onPressed: () {
                     FocusScope.of(context).requestFocus(FocusNode());
 
-                    if (_formKey.currentState!.validate()) {
-                      print(formValues);
+                    if (formKey.currentState!.validate()) {
+                      if (kDebugMode) {
+                        print(formValues);
+                      }
                     } else {
-                      print("Formulario invalido");
+                      if (kDebugMode) {
+                        print("Formulario invalido");
+                      }
                     }
                   },
                 ),

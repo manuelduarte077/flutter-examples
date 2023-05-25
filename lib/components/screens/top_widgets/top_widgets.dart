@@ -25,45 +25,43 @@ class _TopWidgetsScreenState extends State<TopWidgetsScreen> {
         elevation: 0,
         title: const Text('Top Widgets'),
       ),
-      body: Container(
-        child: Align(
-          alignment: Alignment.center,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TopWindgetsButton(
-                text: '#1: Scaffold',
+      body: Align(
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TopWindgetsButton(
+              text: '#1: Scaffold',
+              actionTap: () {
+                onButtonTap((const ScaffolWidgetsScreen()));
+              },
+            ),
+            const SizedBox(height: 16),
+            TopWindgetsButton(
+              text: '#2: Stack',
+              actionTap: () {
+                onButtonTap((const StackWidgetsScreen()));
+              },
+            ),
+            const SizedBox(height: 16),
+            TopWindgetsButton(
+                text: '#3: Transform',
                 actionTap: () {
-                  onButtonTap((const ScaffolWidgetsScreen()));
-                },
-              ),
-              const SizedBox(height: 16),
-              TopWindgetsButton(
-                text: '#2: Stack',
+                  onButtonTap((const TransformWidgetsScreen()));
+                }),
+            const SizedBox(height: 16),
+            TopWindgetsButton(
+                text: '#4: Animation Builder',
                 actionTap: () {
-                  onButtonTap((const StackWidgetsScreen()));
-                },
-              ),
-              const SizedBox(height: 16),
-              TopWindgetsButton(
-                  text: '#3: Transform',
-                  actionTap: () {
-                    onButtonTap((const TransformWidgetsScreen()));
-                  }),
-              const SizedBox(height: 16),
-              TopWindgetsButton(
-                  text: '#4: Animation Builder',
-                  actionTap: () {
-                    onButtonTap((const TwewnAnimationBuilderScreen()));
-                  }),
-              const SizedBox(height: 16),
-              TopWindgetsButton(
-                  text: '#5: SliverAppBar',
-                  actionTap: () {
-                    onButtonTap((const SliverAppBarWidgetsScreen()));
-                  }),
-            ],
-          ),
+                  onButtonTap((const TwewnAnimationBuilderScreen()));
+                }),
+            const SizedBox(height: 16),
+            TopWindgetsButton(
+                text: '#5: SliverAppBar',
+                actionTap: () {
+                  onButtonTap((const SliverAppBarWidgetsScreen()));
+                }),
+          ],
         ),
       ),
     );

@@ -1,6 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:fl_components/designs/emergency/widgets/button_card.dart';
 import 'package:fl_components/designs/emergency/widgets/icon_header.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -15,10 +16,21 @@ class ItemBoton {
 }
 
 final items = <ItemBoton>[
-  ItemBoton(FontAwesomeIcons.carBurst, 'Motor Accident',
-      const Color(0xff6989F5), const Color(0xff906EF5), 'En camino'),
-  ItemBoton(FontAwesomeIcons.plus, 'Medical Emergency', const Color(0xff66A9F2),
-      const Color(0xff536CF6), 'En camino'),
+  ItemBoton(
+    FontAwesomeIcons.carBurst,
+    'Motor Accident',
+    const Color(0xff6989F5),
+    const Color(0xff906EF5),
+    'En camino',
+  ),
+  ItemBoton(
+      FontAwesomeIcons.plus,
+      'Medical Emergency',
+      const Color(
+        0xff66A9F2,
+      ),
+      const Color(0xff536CF6),
+      'En camino'),
   ItemBoton(FontAwesomeIcons.masksTheater, 'Theft / Harrasement',
       const Color(0xffF2D572), const Color(0xffE06AA3), 'Entregado'),
   ItemBoton(FontAwesomeIcons.personBiking, 'Awards', const Color(0xff317183),
@@ -51,7 +63,9 @@ List<Widget> _botonesGrid() {
         color1: e.color1,
         color2: e.color2,
         onPressed: () {
-          print('Hola Mundo');
+          if (kDebugMode) {
+            print('Hola Mundo');
+          }
         },
       ),
     );
